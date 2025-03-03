@@ -49,7 +49,6 @@ final class BukkitAudience extends FacetAudience<CommandSender> {
     () -> new CraftBukkitFacet.Chat(),
     () -> new BukkitFacet.Chat());
   private static final Collection<Facet.ActionBar<Player, ?>> ACTION_BAR = Facet.of(
-    () -> new ViaFacet.ActionBarTitle<>(Player.class, VIA),
     () -> new ViaFacet.ActionBar<>(Player.class, VIA),
     //    () -> new SpigotFacet.ActionBar(),
     () -> new CraftBukkitFacet.ActionBar_1_17(),
